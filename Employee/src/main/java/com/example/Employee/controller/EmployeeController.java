@@ -30,6 +30,7 @@ public class EmployeeController {
 	
 	@GetMapping("/show")
 	public List<EmployeeDetails> findAll(){
+		System.out.printLn("Fetching all the employee details");
 		return employeeService.findAll();		
 	}
 	
