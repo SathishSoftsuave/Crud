@@ -50,6 +50,7 @@ public class EmployeeController {
 	
 	@DeleteMapping("/delete/{id}")
 	public ResponseEntity<Map<String, Boolean>> deleteByID(@PathVariable int id){
+		System.out.println(id);
 		return employeeService.delete(id);	
 	}
 
