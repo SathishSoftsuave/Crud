@@ -20,7 +20,7 @@ public class PingController {
 	
 	@GetMapping("/ping")
 	public String pingMethod(){
-		return companyService.findAll();		
+		return "Java Application is Up and running SuccessFully !!!";		
 	}
 
 }
